@@ -27,26 +27,28 @@ body{
 }
 
 .search-bar{
-    display: flex;
-    position :absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50px;
-     top:90px; 
     box-shadow: 0px 2px 56px  #36e13fcc; 
-   
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .search-input{
-    /* width:600px; */
+    min-width: 220px;
+    max-width: 420px;
     height: 40px;
-  border: none;
-  outline: none;
-  padding: 0 20px;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 .search-btn{
     height: 40px;
     border: none;
-    padding: 0 10px;
+    padding: 0 16px;
     background-color: #092009;
     color: #c7d7cf;
     border-top-right-radius: 50px;
@@ -75,8 +77,6 @@ body{
     color: #b6e0cc;
 }
 .inspiration-text{
-    position :absolute;
-    top:300px;
     color:rgba(121, 10, 121, 0.715);
 }
 .beauty-text{
@@ -103,20 +103,17 @@ margin: 50px auto;
 .logo{
     position: relative;
     display: flex;
+    flex-direction: column;
+    gap: 16px;
     justify-content: center;
     align-items: center;
     font-family: "Sevillana", cursive;
     font-size: 2rem;
-
     text-align: center;
     color: aliceblue;
-    
-/* background-image: url(./img/flower.jpg);
-background-position: center;
-background-size: cover; */
-
-height:400px;
-width:100%;
+    height: 320px;
+    width:100%;
+    padding: 0 16px;
 }
 
 .recognize-plant{
@@ -273,4 +270,55 @@ footer.site-footer{
 
 .footer-text{
     font-size: 0.9rem;
+}
+
+/* -------- RESPONSIVE -------- */
+
+@media (max-width: 768px){
+    .logo{
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 1.6rem;
+    }
+
+    .search-bar{
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .search-input{
+        min-width: 0;
+        flex: 1;
+    }
+
+    .text{
+        width: 220px;
+        height: 80px;
+        font-size: 0.9rem;
+    }
+
+    .quote{
+        font-size: 1rem;
+        padding: 0 16px;
+    }
+
+    .plants-container{
+        gap: 12px;
+    }
+
+    .plant-card{
+        width: 45vw;
+        max-width: 180px;
+        height: auto;
+    }
+
+    .plant-card img{
+        height: auto;
+    }
+
+    footer.site-footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
