@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Plants on Trefle</title>
+</head>
+
+<body>
+    <header class="logo">
+     
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search for a plant by name">
+            <button class="search-btn">Search a plant</button>
+            <div id="suggestionsContainer" class="suggestions"></div>
+        </div>
+       
+        <div class="beauty-text">Beauty</div>
+        <div class="text">
+            <p class="text-nature">I love Plants</p>
+        </div>
+        <div class="peace-text">Peace</div>
+        <div class="inspiration-text">Inspiration</div>
+    
+    </header>
+    <!-- <div class="recognize-plant">
+        <p class = "recognize-text">Reconnaitre une plante</p>
+        <label for="file-upload" class="custom-file-upload">
+            Ajouter ou glisser une image
+        </label>
+        <input type="file" id="file-upload" class="input-picture" />
+        
+        <a href="">Ajouter une url de l'image</a>
+    </div> -->
+    <main class="container">
+        <p class="quote">"Nature is a book written in a language that only the wise can read." - Jean-Jacques Rousseau
+        </p>
+        <hr class="underline-quote">
+        <h1 class="title"></h1>
+        <section class="plants-container"></section>
+        <button class="loadmore-btn">
+            Afficher plus de plantes
+        </button>
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-section">
+            <h3 class="footer-title">Plants on Trefle</h3>
+            <p class="footer-text">Un projet pour explorer les plantes avec l’API Trefle.</p>
+        </div>
+        <div class="footer-section">
+            <h4 class="footer-subtitle">Contact</h4>
+            <p class="footer-text">Email : contact@plants-trefle.dev</p>
+        </div>
+        <div class="footer-section">
+            <h4 class="footer-subtitle">Suivez-nous</h4>
+            <p class="footer-text">Instagram · Twitter · GitHub</p>
+        </div>
+    </footer>
+</body>
+<script type="module" src="script.js"></script>
+
+</html>
